@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart City Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1 id="title">Smart City Dashboard</h1>
+
+<div class="lang-buttons">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('ru')">RU</button>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <h2 id="traffic-title">Traffic</h2>
+    <p id="traffic"></p>
+    <canvas id="trafficChart" width="200" height="100"></canvas>
+  </div>
+
+  <div class="card">
+    <h2 id="air-title">Air Quality</h2>
+    <p id="air"></p>
+    <canvas id="airChart" width="200" height="100"></canvas>
+  </div>
+
+  <div class="card">
+    <h2 id="weather-title">Weather</h2>
+    <p id="weather"></p>
+  </div>
+</div>
+
+<div class="ai-card">
+  <h2 id="ai-title">AI Recommendation</h2>
+  <p id="ai"></p>
+</div>
+
+<button onclick="updateData()">Update Data</button>
+
+<script src="script.js"></script>
+</body>
+</html>
